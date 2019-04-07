@@ -1,13 +1,36 @@
 package model;
 
-public class Cliente {
-	private int codigoCliente;
-	private String nome, CPF;
+import java.util.HashSet;
+import java.util.Set;
 
-	public Cliente(String nome, String CPF) {
+import javax.persistence.*;
+
+@Entity
+public class Cliente {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_cliente")
+	@SequenceGenerator(name = "seq_cliente", sequenceName = "s_cliente", allocationSize = 1)
+	@Column(name = "codigocliente", nullable = false)
+	private int codigo;
+
+	@Column(name = "nome", nullable = false)
+	private String nome;
+
+	@Column(name = "cpf", nullable = true)
+	private String CPF;
+
+	@ManyToOne(optional = true)
+	@JoinColumn(name = "codigoendereco", foreignKey = @ForeignKey(name = "fk_cliente_endereco"))
+	private Endereco endereco;
+
+	@ManyToMany(mappedBy = "clientes")
+	private Set<Pedido> pedidos;
+
+	public Cliente(String nome) {
 		super();
+
 		this.nome = nome;
-		this.CPF = CPF;
 	}
 
 	public void setNome(String nome) {
@@ -18,8 +41,16 @@ public class Cliente {
 		this.CPF = CPF;
 	}
 
-	public int getCodigoCliente() {
-		return this.codigoCliente;
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	private void setPedidos(HashSet<Pedido> pedidos) {
+		this.pedidos = pedidos;
+	}
+
+	public int getCodigo() {
+		return this.codigo;
 	}
 
 	public String getNome() {
@@ -28,5 +59,13 @@ public class Cliente {
 
 	public String getCPF() {
 		return this.CPF;
+	}
+
+	public Endereco getEndereco() {
+		return this.endereco;
+	}
+
+	private Set<Pedido> getPedidos() {
+		return this.pedidos;
 	}
 }
