@@ -8,7 +8,7 @@ public class Endereco {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_endereco")
 	@SequenceGenerator(name = "seq_endereco", sequenceName = "s_endereco", allocationSize = 1)
-	@Column(name = "codigoEndereco", nullable = false)
+	@Column(name = "codigoendereco", nullable = false)
 	private int codigo;
 	
 	@Column(name = "logradouro", nullable = false)
@@ -39,6 +39,10 @@ public class Endereco {
 		this.numero = numero;
 		this.cidade = cidade;
 		this.estado = estado;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public void setLogradouro(String logradouro) {
