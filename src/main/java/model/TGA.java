@@ -77,7 +77,6 @@ public final class TGA {
 
 			// Cria um pedido destinado ao endereço do cliente A
 			Pedido pedido = new Pedido(
-				39.90,
 				clienteA.getEndereco()
 			);
 

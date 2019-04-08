@@ -42,7 +42,7 @@ public class Pedido {
 	/**
 	 * * Pedidos são sempre criados com situacao = 'P' (Pendente) e dataPedido = GetDate()
 	*/
-	public Pedido(double valorFrete, Endereco endereco) {
+	public Pedido(Endereco endereco) {
 		super();
 
 		this.clientes = new HashSet<Cliente>();
