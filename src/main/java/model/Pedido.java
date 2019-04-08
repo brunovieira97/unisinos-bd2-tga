@@ -25,10 +25,7 @@ public class Pedido {
 
 	@Column(name = "valortotal", nullable = false)
 	private double valorTotal;
-
-	@Column(name = "valorfrete", nullable = false)
-	private double valorFrete;
-
+	
 	@Column(name = "situacao", nullable = false)
 	private char situacao;
 
@@ -36,8 +33,8 @@ public class Pedido {
 	private Date dataPedido;
 
 	@ManyToOne(optional = true)
-	@JoinColumn(name = "codigoenderecodestino", foreignKey = @ForeignKey(name = "fk_pedido_endereco"))
-	private Endereco enderecoDestino;
+	@JoinColumn(name = "codigoendereco", foreignKey = @ForeignKey(name = "fk_pedido_endereco"))
+	private Endereco endereco;
 
 	@OneToMany (mappedBy = "pedido")
 	private Set<PedidoItem> itens;
@@ -45,15 +42,24 @@ public class Pedido {
 	/**
 	 * * Pedidos são sempre criados com situacao = 'P' (Pendente) e dataPedido = GetDate()
 	*/
-	public Pedido(double valorFrete, Endereco enderecoDestino) {
+	public Pedido(double valorFrete, Endereco endereco) {
 		super();
 
 		this.clientes = new HashSet<Cliente>();
-		this.valorFrete = valorFrete;
 		this.situacao = 'P';
 		this.dataPedido = new Date();
-		this.enderecoDestino = enderecoDestino;
+		this.endereco = endereco;
 		this.itens = new HashSet<PedidoItem>();
+	}
+
+	public void addItem(PedidoItem item) {
+		getItens().add(item);
+
+		this.valorTotal += item.getValor();
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public void setClientes(HashSet<Cliente> clientes) {
@@ -64,10 +70,6 @@ public class Pedido {
 		this.valorTotal = valorTotal;
 	}
 
-	public void setValorFrete(double valorFrete) {
-		this.valorFrete = valorFrete;
-	}
-
 	public void setSituacao(char situacao) {
 		this.situacao = situacao;
 	}
@@ -76,8 +78,8 @@ public class Pedido {
 		this.dataPedido = dataPedido;
 	}
 
-	public void setEnderecoDestino(Endereco enderecoDestino) {
-		this.enderecoDestino = enderecoDestino;
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}
 
 	public void setItens(HashSet<PedidoItem> itens) {
@@ -96,10 +98,6 @@ public class Pedido {
 		return this.valorTotal;
 	}
 
-	public double getValorFrete() {
-		return this.valorFrete;
-	}
-
 	public char getSituacao() {
 		return this.situacao;
 	}
@@ -108,8 +106,8 @@ public class Pedido {
 		return this.dataPedido;
 	}
 
-	public Endereco getEnderecoDestino() {
-		return this.enderecoDestino;
+	public Endereco getEndereco() {
+		return this.endereco;
 	}
 
 	public Set<PedidoItem> getItens() {
