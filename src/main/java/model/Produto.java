@@ -8,6 +8,7 @@ public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_produto")
 	@SequenceGenerator(name = "seq_produto", sequenceName = "s_produto", allocationSize = 1)
+	@Column(name = "codigoproduto", nullable = false)
 	private int codigo;
 	
 	@Column(name = "descricao", nullable = false)
