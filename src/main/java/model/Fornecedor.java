@@ -8,6 +8,7 @@ public class Fornecedor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_fornecedor")
 	@SequenceGenerator(name = "seq_fornecedor", sequenceName = "s_fornecedor", allocationSize = 1)
+	@Column(name = "codigofornecedor", nullable = false)
 	private int codigo;
 	
 	@Column(name = "razaosocial", nullable = false)
@@ -17,13 +18,17 @@ public class Fornecedor {
 	private String CNPJ;
 	
 	@ManyToOne(optional = true)
-	@JoinColumn(name = "endereco", foreignKey = @ForeignKey(name = "fk_fornecedor_endereco"))
+	@JoinColumn(name = "codigoendereco", foreignKey = @ForeignKey(name = "fk_fornecedor_endereco"))
 	private Endereco endereco;
 
 	public Fornecedor(String razaoSocial) {
 		super();
 
 		this.razaoSocial = razaoSocial;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public void setRazaoSocial(String razaoSocial) {
