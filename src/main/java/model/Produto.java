@@ -16,9 +16,16 @@ public class Produto {
 	@Column(name = "valorunitario", nullable = false)
 	private double valorUnitario;
 
-	@ManyToOne(optional = false)
+	@ManyToOne(optional = true)
 	@JoinColumn(name = "codigofornecedor", foreignKey = @ForeignKey(name = "fk_produto_fornecedor"))
 	private Fornecedor fornecedor;
+
+	public Produto(String descricao, double valorUnitario) {
+		super();
+
+		this.descricao = descricao;
+		this.valorUnitario = valorUnitario;
+	}
 
 	public Produto(String descricao, double valorUnitario, Fornecedor fornecedor) {
 		super();
