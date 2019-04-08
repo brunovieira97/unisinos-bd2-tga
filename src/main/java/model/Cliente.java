@@ -33,6 +33,17 @@ public class Cliente {
 		this.nome = nome;
 	}
 
+	public Cliente(String nome, Endereco endereco) {
+		super();
+
+		this.nome = nome;
+		this.endereco = endereco;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
