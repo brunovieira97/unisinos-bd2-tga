@@ -13,26 +13,31 @@ public class Produto {
 	@Column(name = "descricao", nullable = false)
 	private String descricao;
 
-	@Column(name = "valor", nullable = false)
-	private double valor;
+	@Column(name = "valorunitario", nullable = false)
+	private double valorUnitario;
 
-	@ManyToOne(optional = true)
+	@ManyToOne(optional = false)
 	@JoinColumn(name = "codigofornecedor", foreignKey = @ForeignKey(name = "fk_produto_fornecedor"))
 	private Fornecedor fornecedor;
 
-	public Produto(String descricao, double valor) {
+	public Produto(String descricao, double valorUnitario, Fornecedor fornecedor) {
 		super();
 
 		this.descricao = descricao;
-		this.valor = valor;
+		this.valorUnitario = valorUnitario;
+		this.fornecedor = fornecedor;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 
-	public void setValor(double valor) {
-		this.valor = valor;
+	public void setValorUnitario(double valorUnitario) {
+		this.valorUnitario = valorUnitario;
 	}
 
 	public void setFornecedor(Fornecedor fornecedor) {
@@ -47,8 +52,8 @@ public class Produto {
 		return this.descricao;
 	}
 
-	public double getValor() {
-		return this.valor;
+	public double getValorUnitario() {
+		return this.valorUnitario;
 	}
 
 	public Fornecedor getFornecedor() {
