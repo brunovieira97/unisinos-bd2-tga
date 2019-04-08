@@ -22,16 +22,19 @@ public class PedidoItem {
 	@Column(name = "quantidade", nullable = false)
 	private int quantidade;
 
-	@Column(name = "valortotal", nullable = false)
-	private double valorTotal;
+	@Column(name = "valor", nullable = false)
+	private double valor;
 
-	public PedidoItem(Pedido pedido, Produto produto, int quantidade, double valorTotal) {
+	public PedidoItem(Produto produto, int quantidade) {
 		super();
 
-		this.pedido = pedido;
 		this.produto = produto;
 		this.quantidade = quantidade;
-		this.valorTotal = valorTotal;
+		this.valor = produto.getValorUnitario() * quantidade;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public void setPedido(Pedido pedido) {
@@ -46,8 +49,8 @@ public class PedidoItem {
 		this.quantidade = quantidade;
 	}
 
-	public void setValorTotal(double valorTotal) {
-		this.valorTotal = valorTotal;
+	public void setValor(double valor) {
+		this.valor = valor;
 	}
 
 	public int getCodigo() {
@@ -66,8 +69,8 @@ public class PedidoItem {
 		return this.quantidade;
 	}
 
-	public double getValorTotal() {
-		return this.valorTotal;
+	public double getValor() {
+		return this.valor;
 	}
 	
 }
