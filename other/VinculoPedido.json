@@ -1,0 +1,20 @@
+{
+	"VinculoPedido": {
+		"ClientePedido": [
+			{
+				"CodigoPedido": "1",
+				"CodigoCliente": "1"
+			},
+			{
+				"CodigoPedido": "1",
+				"CodigoCliente": "2"
+			},
+			{
+				"CodigoPedido": "1",
+				"CodigoCliente": "1"
+			}
+		],
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xsi:noNamespaceSchemaLocation": "VinculoPedido.xsd"
+	}
+}

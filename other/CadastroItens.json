@@ -1,0 +1,29 @@
+{
+	"CadastroItens": {
+		"PedidoItem": [
+			{
+				"CodigoPedidoItem": "1",
+				"CodigoPedido": "1",
+				"CodigoProduto": "1",
+				"Quantidade": "1",
+				"Valor": "100"
+			},
+			{
+				"CodigoPedidoItem": "2",
+				"CodigoPedido": "2",
+				"CodigoProduto": "2",
+				"Quantidade": "1",
+				"Valor": "50"
+			},
+			{
+				"CodigoPedidoItem": "3",
+				"CodigoPedido": "2",
+				"CodigoProduto": "1",
+				"Quantidade": "1",
+				"Valor": "50"
+			}
+		],
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xsi:noNamespaceSchemaLocation": "CadastroItens.xsd"
+	}
+}

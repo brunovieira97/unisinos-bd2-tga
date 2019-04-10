@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+	<xs:element name="CadastroProduto">
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="Produto" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoProduto" 		type="xs:integer"/>
+							<xs:element name="Descricao" 		 	type="xs:string"/>
+							<xs:element name="ValorUnitario" 		type="xs:decimal"/>
+							<xs:element name="CodigoFornecedor" 	type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

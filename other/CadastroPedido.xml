@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CadastroPedido xsi:noNamespaceSchemaLocation="CadastroPedido.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Pedido>
+		<CodigoPedido>1</CodigoPedido>
+		<ValorTotal>200</ValorTotal>
+		<Situacao>Aprovado</Situacao>
+		<DataPedido>2019-04-01</DataPedido>
+		<CodigoEndereco>3</CodigoEndereco>
+	</Pedido>	
+	<Pedido>
+		<CodigoPedido>2</CodigoPedido>
+		<ValorTotal>150</ValorTotal>
+		<Situacao>Pendente</Situacao>
+		<DataPedido>2019-04-10</DataPedido>
+		<CodigoEndereco>3</CodigoEndereco>
+	</Pedido>
+</CadastroPedido>

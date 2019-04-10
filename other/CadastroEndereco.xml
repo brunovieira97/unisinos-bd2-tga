@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CadastroEndereco xsi:noNamespaceSchemaLocation="CadastroEndereco.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Endereco>
+		<CodigoEndereco>1</CodigoEndereco>
+		<Logradouro> Av. Unisinos</Logradouro>
+		<Numero>950</Numero>
+		<Complemento></Complemento>
+		<Bairro>Cristo Rei</Bairro>
+		<Cidade>São Leopoldo</Cidade>
+		<Estado>RS</Estado>
+		<Pais>BR</Pais>
+	</Endereco>	
+	<Endereco>
+		<CodigoEndereco>2</CodigoEndereco>
+		<Logradouro> Av. Floresta</Logradouro>
+		<Numero>524</Numero>
+		<Complemento>205</Complemento>
+		<Bairro>Ideal</Bairro>
+		<Cidade>Novo Hamburgo</Cidade>
+		<Estado>RS</Estado>
+		<Pais>BR</Pais>
+	</Endereco>	
+	<Endereco>
+		<CodigoEndereco>3</CodigoEndereco>
+		<Logradouro> Av. Fererico Ruan</Logradouro>
+		<Numero>1024</Numero>
+		<Complemento></Complemento>
+		<Bairro>Centro</Bairro>
+		<Cidade>Porto Alegre</Cidade>
+		<Estado>RS</Estado>
+		<Pais>BR</Pais>
+	</Endereco>	
+</CadastroEndereco>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CadastroFornecedor xsi:noNamespaceSchemaLocation="CadastroFornecedor.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Fornecedor>
+		<CodigoFornecedor>1</CodigoFornecedor>
+		<RazaoSocial>Universidade do Vale do Rio dos Sinos</RazaoSocial>
+		<CNPJ>33.041.418/0001-04</CNPJ>
+		<CodigoEndereco>3</CodigoEndereco>
+	</Fornecedor>	
+</CadastroFornecedor>

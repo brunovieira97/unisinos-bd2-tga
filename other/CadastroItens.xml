@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CadastroItens xsi:noNamespaceSchemaLocation="CadastroItens.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PedidoItem>
+		<CodigoPedidoItem>1</CodigoPedidoItem>
+		<CodigoPedido>1</CodigoPedido>
+		<CodigoProduto>1</CodigoProduto>
+		<Quantidade>1</Quantidade>
+		<Valor>100</Valor>
+	</PedidoItem>	
+	<PedidoItem>
+		<CodigoPedidoItem>2</CodigoPedidoItem>
+		<CodigoPedido>2</CodigoPedido>
+		<CodigoProduto>2</CodigoProduto>
+		<Quantidade>1</Quantidade>
+		<Valor>50</Valor>
+	</PedidoItem>	
+	<PedidoItem>
+		<CodigoPedidoItem>3</CodigoPedidoItem>
+		<CodigoPedido>2</CodigoPedido>
+		<CodigoProduto>1</CodigoProduto>
+		<Quantidade>1</Quantidade>
+		<Valor>50</Valor>
+	</PedidoItem>	
+</CadastroItens>

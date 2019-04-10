@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CadastroCliente xsi:noNamespaceSchemaLocation="CadastroCliente.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Cliente>
+		<CodigoCliente>1</CodigoCliente>
+		<Nome>Taiyuki So</Nome>
+		<CPF>427.502.150-99</CPF>
+		<CodigoEndereco>1</CodigoEndereco>
+	</Cliente>
+	<Cliente>
+		<CodigoCliente>2</CodigoCliente>
+		<Nome>Bruno Vieira</Nome>
+		<CPF>604.925.200-97</CPF>
+		<CodigoEndereco>2</CodigoEndereco>
+	</Cliente>
+</CadastroCliente>

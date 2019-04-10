@@ -1,0 +1,20 @@
+{
+	"CadastroCliente": {
+		"Cliente": [
+			{
+				"CodigoCliente": "1",
+				"Nome": "Taiyuki So",
+				"CPF": "427.502.150-99",
+				"CodigoEndereco": "1"
+			},
+			{
+				"CodigoCliente": "2",
+				"Nome": "Bruno Vieira",
+				"CPF": "604.925.200-97",
+				"CodigoEndereco": "2"
+			}
+		],
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xsi:noNamespaceSchemaLocation": "CadastroCliente.xsd"
+	}
+}

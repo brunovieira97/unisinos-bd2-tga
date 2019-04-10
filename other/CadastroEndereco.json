@@ -1,0 +1,38 @@
+{
+	"CadastroEndereco": {
+		"Endereco": [
+			{
+				"CodigoEndereco": "1",
+				"Logradouro": "Av. Unisinos",
+				"Numero": "950",
+				"Complemento": "",
+				"Bairro": "Cristo Rei",
+				"Cidade": "São Leopoldo",
+				"Estado": "RS",
+				"Pais": "BR"
+			},
+			{
+				"CodigoEndereco": "2",
+				"Logradouro": "Av. Floresta",
+				"Numero": "524",
+				"Complemento": "205",
+				"Bairro": "Ideal",
+				"Cidade": "Novo Hamburgo",
+				"Estado": "RS",
+				"Pais": "BR"
+			},
+			{
+				"CodigoEndereco": "3",
+				"Logradouro": "Av. Fererico Ruan",
+				"Numero": "1024",
+				"Complemento": "",
+				"Bairro": "Centro",
+				"Cidade": "Porto Alegre",
+				"Estado": "RS",
+				"Pais": "BR"
+			}
+		],
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xsi:noNamespaceSchemaLocation": "CadastroEndereco.xsd"
+	}
+}

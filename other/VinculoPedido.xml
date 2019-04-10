@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VinculoPedido xsi:noNamespaceSchemaLocation="VinculoPedido.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ClientePedido>
+		<CodigoPedido>1</CodigoPedido>
+		<CodigoCliente>1</CodigoCliente>
+	</ClientePedido>	
+	<ClientePedido>
+		<CodigoPedido>1</CodigoPedido>
+		<CodigoCliente>2</CodigoCliente>
+	</ClientePedido>	
+	<ClientePedido>
+		<CodigoPedido>1</CodigoPedido>
+		<CodigoCliente>1</CodigoCliente>
+	</ClientePedido>	
+</VinculoPedido>
+

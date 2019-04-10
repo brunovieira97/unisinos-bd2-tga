@@ -1,0 +1,12 @@
+{
+	"CadastroFornecedor": {
+		"Fornecedor": {
+			"CodigoFornecedor": "1",
+			"RazaoSocial": "Universidade do Vale do Rio dos Sinos",
+			"CNPJ": "33.041.418/0001-04",
+			"CodigoEndereco": "3"
+		},
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xsi:noNamespaceSchemaLocation": "CadastroFornecedor.xsd"
+	}
+}

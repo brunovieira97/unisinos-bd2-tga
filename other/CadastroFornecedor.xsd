@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+	<xs:element name="CadastroFornecedor">
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="Fornecedor" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoFornecedor"	type="xs:integer"/>
+							<xs:element name="RazaoSocial" 		type="xs:string"/>
+							<xs:element name="CNPJ" 		 	type="xs:string"/>
+							<xs:element name="CodigoEndereco" 	type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema> 

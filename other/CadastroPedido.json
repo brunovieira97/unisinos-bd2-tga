@@ -1,0 +1,22 @@
+{
+	"CadastroPedido": {
+		"Pedido": [
+			{
+				"CodigoPedido": "1",
+				"ValorTotal": "200",
+				"Situacao": "Aprovado",
+				"DataPedido": "2019-04-01",
+				"CodigoEndereco": "3"
+			},
+			{
+				"CodigoPedido": "2",
+				"ValorTotal": "150",
+				"Situacao": "Pendente",
+				"DataPedido": "2019-04-10",
+				"CodigoEndereco": "3"
+			}
+		],
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xsi:noNamespaceSchemaLocation": "CadastroPedido.xsd"
+	}
+}

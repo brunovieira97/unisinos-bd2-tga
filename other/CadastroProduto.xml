@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CadastroProduto xsi:noNamespaceSchemaLocation="CadastroProduto.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Produto>
+		<CodigoProduto>1</CodigoProduto>
+		<Descricao>Monitor</Descricao>
+		<ValorUnitario>100</ValorUnitario>
+		<CodigoFornecedor>1</CodigoFornecedor>
+	</Produto>	
+	<Produto>
+		<CodigoProduto>2</CodigoProduto>
+		<Descricao>Teclado</Descricao>
+		<ValorUnitario>50</ValorUnitario>
+		<CodigoFornecedor>1</CodigoFornecedor>
+	</Produto>	
+</CadastroProduto>

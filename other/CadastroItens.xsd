@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="CadastroItens">
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="PedidoItem" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPedidoItem" 	type="xs:integer"/>
+							<xs:element name="CodigoPedido" 		type="xs:integer"/>
+							<xs:element name="CodigoProduto" 		type="xs:integer"/>
+							<xs:element name="Quantidade" 			type="xs:integer"/>
+							<xs:element name="Valor" 				type="xs:decimal"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema> 

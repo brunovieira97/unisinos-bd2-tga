@@ -1,0 +1,20 @@
+{
+	"CadastroProduto": {
+		"Produto": [
+			{
+				"CodigoProduto": "1",
+				"Descricao": "Monitor",
+				"ValorUnitario": "100",
+				"CodigoFornecedor": "1"
+			},
+			{
+				"CodigoProduto": "2",
+				"Descricao": "Teclado",
+				"ValorUnitario": "50",
+				"CodigoFornecedor": "1"
+			}
+		],
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xsi:noNamespaceSchemaLocation": "CadastroProduto.xsd"
+	}
+}
