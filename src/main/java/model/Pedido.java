@@ -39,6 +39,10 @@ public class Pedido {
 	@OneToMany (mappedBy = "pedido")
 	private Set<PedidoItem> itens;
 
+	public Pedido() {
+		
+	}
+
 	/**
 	 * * Pedidos são sempre criados com situacao = 'P' (Pendente) e dataPedido = GetDate()
 	*/

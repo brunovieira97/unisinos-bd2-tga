@@ -25,6 +25,10 @@ public class PedidoItem {
 	@Column(name = "valor", nullable = false)
 	private double valor;
 
+	public PedidoItem() {
+		
+	}
+
 	public PedidoItem(Produto produto, int quantidade) {
 		super();
 

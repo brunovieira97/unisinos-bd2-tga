@@ -105,6 +105,16 @@ public final class TGA {
 
 			em.getTransaction().commit();
 
+			// Busca informações do banco de dados
+			// Busca cliente e quantidade de pedidos
+			Cliente clienteEncontrado = em.find(Cliente.class, 1);
+
+			System.out.println(
+				"Cliente " + clienteEncontrado.getCodigo() + ": " + clienteEncontrado.getNome() + "\n" +
+				"Quantidade de pedidos: " + clienteEncontrado.getPedidos().size()
+			);
+
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			em.getTransaction().rollback();

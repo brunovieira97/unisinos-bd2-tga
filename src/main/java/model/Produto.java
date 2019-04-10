@@ -21,6 +21,10 @@ public class Produto {
 	@JoinColumn(name = "codigofornecedor", foreignKey = @ForeignKey(name = "fk_produto_fornecedor"))
 	private Fornecedor fornecedor;
 
+	public Produto() {
+		
+	}
+
 	public Produto(String descricao, double valorUnitario) {
 		super();
 

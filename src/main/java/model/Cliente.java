@@ -27,6 +27,10 @@ public class Cliente {
 	@ManyToMany(mappedBy = "clientes")
 	private Set<Pedido> pedidos;
 
+	public Cliente() {
+		
+	}
+
 	public Cliente(String nome) {
 		super();
 
@@ -56,7 +60,7 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 
-	private void setPedidos(HashSet<Pedido> pedidos) {
+	public void setPedidos(HashSet<Pedido> pedidos) {
 		this.pedidos = pedidos;
 	}
 
@@ -76,7 +80,7 @@ public class Cliente {
 		return this.endereco;
 	}
 
-	private Set<Pedido> getPedidos() {
+	public Set<Pedido> getPedidos() {
 		return this.pedidos;
 	}
 }

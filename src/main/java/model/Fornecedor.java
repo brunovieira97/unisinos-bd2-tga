@@ -21,6 +21,10 @@ public class Fornecedor {
 	@JoinColumn(name = "codigoendereco", foreignKey = @ForeignKey(name = "fk_fornecedor_endereco"))
 	private Endereco endereco;
 
+	public Fornecedor() {
+		
+	}
+
 	public Fornecedor(String razaoSocial) {
 		super();
 

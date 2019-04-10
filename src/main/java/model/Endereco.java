@@ -32,6 +32,10 @@ public class Endereco {
 	@Column(name = "pais", nullable = true)
 	private String pais;
 
+	public Endereco() {
+		
+	}
+
 	public Endereco(String logradouro, String numero, String cidade, String estado) {
 		super();
 
